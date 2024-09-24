@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class=" w-75 m-auto mt-5 ">
+        <label for="productName">productName </label>
+        <input type="text" name=" " id="productName" class=" form-control mb-3" />
+
+        <label for="productPrice">productPrice </label>
+        <input type="text" name=" " id="productPrice" class=" form-control mb-3" />
+
+        <label for="productCat">productCat </label>
+        <input type="text" name=" " id="productCat" class=" form-control mb-3" />
+
+        <label for="productDesc">productDesc </label>
+        <textarea type="text" name=" " id="productDesc" class=" form-control" ></textarea>
+       
+        <button id="mainBtn"  onclick="add();" class=" btn bg-danger mt-3 ">addProduct</button>
+         
+        <input type="text" name=" " id="search" class=" form-control ms-auto mt-3"  onkeyup="search(this.value)" placeholder="search...."  />
+    </div>
+
+   <table class=" table w-75 m-auto mt-3 " >
+      <thead  > 
+        <th>index</th>
+        <th>productName</th>
+        <th>productPrice</th>
+        <th>productCat</th>
+        <th>productDesc</th>
+        <th>update</th>
+        <th>delete</th>
+      </thead>
+      <tbody id="tableRow"  >
+      </tbody>  
+  </table>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+
+
+</html>
